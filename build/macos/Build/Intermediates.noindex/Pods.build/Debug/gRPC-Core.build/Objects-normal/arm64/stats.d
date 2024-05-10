@@ -1,0 +1,42 @@
+dependencies: \
+  /Users/rolandmakszin/Applikaciok/reminder/macos/Pods/gRPC-Core/src/core/lib/debug/stats.cc \
+  /Users/rolandmakszin/Applikaciok/reminder/macos/Pods/Target\ Support\ Files/gRPC-Core/gRPC-Core-prefix.pch \
+  /Users/rolandmakszin/Applikaciok/reminder/macos/Pods/gRPC-Core/include/grpc/support/port_platform.h \
+  /Users/rolandmakszin/Applikaciok/reminder/macos/Pods/gRPC-Core/src/core/lib/debug/stats.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/strings/string_view.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/attributes.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/config.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/options.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/policy_checks.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/nullability.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/nullability_impl.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/meta/type_traits.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/throw_delegate.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/macros.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/optimization.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/port.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/types/span.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/types/internal/span.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/algorithm/algorithm.h \
+  /Users/rolandmakszin/Applikaciok/reminder/macos/Pods/gRPC-Core/src/core/lib/debug/histogram_view.h \
+  /Users/rolandmakszin/Applikaciok/reminder/macos/Pods/gRPC-Core/src/core/lib/debug/stats_data.h \
+  /Users/rolandmakszin/Applikaciok/reminder/macos/Pods/gRPC-Core/src/core/lib/gprpp/per_cpu.h \
+  /Users/rolandmakszin/Applikaciok/reminder/macos/Pods/gRPC-Core/include/grpc/support/cpu.h \
+  /Users/rolandmakszin/Applikaciok/reminder/macos/Pods/gRPC-Core/src/core/lib/gprpp/no_destruct.h \
+  /Users/rolandmakszin/Applikaciok/reminder/macos/Pods/gRPC-Core/src/core/lib/gprpp/construct_destruct.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/strings/str_cat.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/strings/has_absl_stringify.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/strings/internal/resize_uninitialized.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/strings/internal/stringify_sink.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/strings/numbers.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/endian.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/casts.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/identity.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/unaligned_access.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/numeric/bits.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/numeric/internal/bits.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/numeric/int128.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/numeric/int128_have_intrinsic.inc \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/strings/str_join.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/strings/internal/str_join_internal.h \
+  /Users/rolandmakszin/Applikaciok/reminder/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/strings/internal/ostringstream.h
