@@ -34,8 +34,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      scaffoldMessengerKey: Utils().messengerKey,
       debugShowCheckedModeBanner: false,
+      scaffoldMessengerKey: Utils().messengerKey,
       navigatorKey: navigatorKey,
       title: 'Flutter Demo',
       theme: primaryTheme,
