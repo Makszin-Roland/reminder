@@ -1,1 +1,0 @@
- /Users/rolandmakszin/Applikaciok/reminder/.dart_tool/flutter_build/58b1692d1c0b2c61be6c703ea2b55021/native_assets.yaml: 

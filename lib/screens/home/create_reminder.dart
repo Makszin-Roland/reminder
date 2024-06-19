@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
@@ -13,6 +14,8 @@ import 'package:provider/provider.dart';
 import 'package:uuid/uuid.dart';
 import 'package:open_file/open_file.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
+
 
 import '../../utils/utils.dart';
 
@@ -39,7 +42,6 @@ class _CreateNewReminderState extends State<CreateNewReminder> {
   bool isLoading = false;
   String _fileExtension = 'No file';
 
-
   @override
   void dispose() {
     
@@ -50,7 +52,7 @@ class _CreateNewReminderState extends State<CreateNewReminder> {
     super.dispose();
   }
 
-  void addReminder () {
+  void addReminder() async {
     if (_titleController.text.trim().isEmpty) {
       Utils().errorDialog(context, 'Please enter a title');
 
@@ -73,9 +75,29 @@ class _CreateNewReminderState extends State<CreateNewReminder> {
       ), fileToDisplay
       );
 
+      final reminderTitle = _titleController.text.trim();
+      final reminderDate = pickedDate!;
+      final fcmToken = await FirebaseMessaging.instance.getToken();
+
+      print('fcmToken: $fcmToken');
+
+      _saveReminderToFirestore(reminderTitle, reminderDate, fcmToken);
+      
+
       Navigator.push(context, MaterialPageRoute(
         builder: (ctx) => const HomeScreen(),
         ));
+  }
+
+  void _saveReminderToFirestore(String title, DateTime date, String? fcmToken) {
+    final reminderData = {
+      'title': title,
+      'valability': date,
+      'userId': fcmToken,
+    };
+
+    FirebaseFirestore.instance.collection('reminders').add(reminderData);  
+
   }
 
   void pickFile() async {
@@ -131,6 +153,7 @@ class _CreateNewReminderState extends State<CreateNewReminder> {
       builder: (context) => Wrap(
         children: [
           Container(
+            padding: const EdgeInsets.only(left: 10),
             color: AppColors.buttonColor,
             child: ListTile(
               leading: const Icon(Icons.photo_library),
@@ -144,6 +167,7 @@ class _CreateNewReminderState extends State<CreateNewReminder> {
             ),
           ),
           Container(
+            padding: const EdgeInsets.only(left: 10),
             color: AppColors.buttonColor,
             child: ListTile(
               leading: const Icon(Icons.attach_file),
@@ -234,6 +258,7 @@ class _CreateNewReminderState extends State<CreateNewReminder> {
                       icon: const Icon(Icons.attach_file), 
                       label: const Text('Choose file'),
                       style: ElevatedButton.styleFrom(
+                        fixedSize: const Size(185, 40),
                         backgroundColor: AppColors.buttonColor,
                         foregroundColor: Colors.black,
                         shape: RoundedRectangleBorder(
@@ -274,9 +299,11 @@ class _CreateNewReminderState extends State<CreateNewReminder> {
                   //const Expanded(child: SizedBox(height: 5,)),
             
                   ElevatedButton.icon(
+
                     icon: const Icon(Icons.add_circle),
                     label: const Text('Create reminder'),
                     style:  ElevatedButton.styleFrom(
+                      fixedSize: const Size(185, 40),
                       backgroundColor: AppColors.buttonColor,
                       foregroundColor: Colors.black,
                       shape: RoundedRectangleBorder(

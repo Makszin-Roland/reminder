@@ -19,7 +19,6 @@ class Reminder {
   final String? filename;
   late String? fileUrl;
 
-  
   //reminder to firestore
   Map<String, dynamic> toFirestore() {
     return {
@@ -50,6 +49,4 @@ class Reminder {
 
     return reminder;
   }
-
-
 }
