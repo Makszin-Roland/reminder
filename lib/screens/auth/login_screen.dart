@@ -2,6 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:reminder/main.dart';
+import 'package:reminder/screens/auth/reset_password.dart';
 import 'package:reminder/shared/styled_text.dart';
 import 'package:reminder/theme.dart';
 import 'package:reminder/utils/utils.dart';
@@ -38,6 +39,7 @@ final formKeyLogin = GlobalKey<FormState>();
     return Scaffold(
       appBar: AppBar(
         title: const StyledText('Login'),
+        automaticallyImplyLeading: false,
       ),
       body: Container(
         padding: const EdgeInsets.all(16),
@@ -74,6 +76,22 @@ final formKeyLogin = GlobalKey<FormState>();
                 autovalidateMode: AutovalidateMode.onUserInteraction,
                 obscureText: true,
               ), 
+
+              Align(
+                alignment: Alignment.centerRight,   
+                child: InkWell(
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (ctx) => const ResetPassword()),);
+                  },
+                  child: Text('Reset password', 
+                   style: TextStyle(
+                        decoration: TextDecoration.underline,
+                        decorationColor: AppColors.buttonColor,
+                        color: AppColors.buttonColor
+                      )
+                  ),
+                ),
+              ),
 
               const SizedBox(height: 30,),
 

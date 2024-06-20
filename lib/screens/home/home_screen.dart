@@ -23,7 +23,6 @@ class _HomeScreenState extends State<HomeScreen> {
   void initState() {
     Provider.of<ReminderStore>(context, listen: false)
       .fetchRemindersOnce();
-
     super.initState();
   }
 
@@ -66,6 +65,23 @@ class _HomeScreenState extends State<HomeScreen> {
                 Navigator.push(context, MaterialPageRoute(
                   builder: (ctx) => const CreateNewReminder(),
                 ));
+              },
+            ),
+
+            ListTile(
+              
+              leading: const Icon(
+                Icons.refresh,
+                color: Colors.white,
+                ),
+              title: const Text(
+                'Refresh',
+                style: TextStyle(color: Colors.white)
+                ),
+              onTap:() {
+                setState(() {
+                  Provider.of<ReminderStore>(context, listen: false).fetchRemindersOnce();
+                });
               },
             ),
 

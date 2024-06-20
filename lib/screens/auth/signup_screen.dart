@@ -39,97 +39,102 @@ final formKeySignUp = GlobalKey<FormState>();
     return Scaffold(
       appBar: AppBar(
         title: const StyledText('Sign up'),
+        automaticallyImplyLeading: false,
       ),
       body: Container(
         padding: const EdgeInsets.all(16),
         child: Form(
           key: formKeySignUp,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              TextFormField(
-                controller: _emailController,
-                decoration: const InputDecoration(
-                  label: Text('Email')     
-                ),
-                style: const TextStyle(color: Colors.white),
-                validator: validateEmail,
-                autovalidateMode: AutovalidateMode.onUserInteraction,
-              ),  
-
-              const SizedBox(height: 30,),
-
-              TextFormField(
-                controller: _passwordController,
-                decoration: const InputDecoration(
-                  label: Text('Password')     
-                ),
-                style: const TextStyle(color: Colors.white),
-                validator:(value) {
-                  if( value == null || value.length < 8) {
-                    return 'Password should be minimum 8 character';
-                  }
-                  return null;
-                },
-                autovalidateMode: AutovalidateMode.onUserInteraction,
-                obscureText: true,
-              ), 
-
-              const SizedBox(height: 30,),
-
-              TextFormField(
-                controller: _password2Controller,
-                decoration: const InputDecoration(
-                  label: Text('Password')     
-                ),
-                style: const TextStyle(color: Colors.white),
-                validator:(value) {
-                  if( value != _passwordController.text) {
-                    return 'Passwords arent equal';
-                  }
-                  return null;
-                },
-                autovalidateMode: AutovalidateMode.onUserInteraction,
-                obscureText: true,
-              ), 
-
-              const SizedBox(height: 30,),
-
-              ElevatedButton.icon(
-                icon: const Icon(Icons.arrow_upward),
-                label: const Text('Sign Up'),
-                style:  ElevatedButton.styleFrom(
-                  backgroundColor: AppColors.buttonColor,
-                  foregroundColor: Colors.black,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(5.0),
-                  ),  
-                ),
-                onPressed: singUp, 
-    
-              ),
-
-              const SizedBox(height: 1,),
-
-              RichText(
-                text: TextSpan(
-                  text: 'Already have an account?  ',
-                  children: [
-                    TextSpan(
-                      text: 'Login',
-                      recognizer: TapGestureRecognizer()
-                        ..onTap = widget.onClickSignUp,
-                      style: TextStyle(
-                        decoration: TextDecoration.underline,
-                        color: AppColors.buttonColor
-                      )
+          child: Center(
+            child: SingleChildScrollView(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  TextFormField(
+                    controller: _emailController,
+                    decoration: const InputDecoration(
+                      label: Text('Email')     
                     ),
-                  ],
-                ),
-              )
-            ],
-          
+                    style: const TextStyle(color: Colors.white),
+                    validator: validateEmail,
+                    autovalidateMode: AutovalidateMode.onUserInteraction,
+                  ),  
+              
+                  const SizedBox(height: 30,),
+              
+                  TextFormField(
+                    controller: _passwordController,
+                    decoration: const InputDecoration(
+                      label: Text('Password')     
+                    ),
+                    style: const TextStyle(color: Colors.white),
+                    validator:(value) {
+                      if( value == null || value.length < 8) {
+                        return 'Password should be minimum 8 character';
+                      }
+                      return null;
+                    },
+                    autovalidateMode: AutovalidateMode.onUserInteraction,
+                    obscureText: true,
+                  ), 
+              
+                  const SizedBox(height: 30,),
+              
+                  TextFormField(
+                    controller: _password2Controller,
+                    decoration: const InputDecoration(
+                      label: Text('Password')     
+                    ),
+                    style: const TextStyle(color: Colors.white),
+                    validator:(value) {
+                      if( value != _passwordController.text) {
+                        return 'Passwords arent equal';
+                      }
+                      return null;
+                    },
+                    autovalidateMode: AutovalidateMode.onUserInteraction,
+                    obscureText: true,
+                  ), 
+              
+                  const SizedBox(height: 30,),
+              
+                  ElevatedButton.icon(
+                    icon: const Icon(Icons.arrow_upward),
+                    label: const Text('Sign Up'),
+                    style:  ElevatedButton.styleFrom(
+                      backgroundColor: AppColors.buttonColor,
+                      foregroundColor: Colors.black,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(5.0),
+                      ),  
+                    ),
+                    onPressed: singUp, 
+                  
+                  ),
+              
+                  const SizedBox(height: 1,),
+              
+                  RichText(
+                    text: TextSpan(
+                      text: 'Already have an account?  ',
+                      children: [
+                        TextSpan(
+                          text: 'Login',
+                          recognizer: TapGestureRecognizer()
+                            ..onTap = widget.onClickSignUp,
+                          style: TextStyle(
+                            decoration: TextDecoration.underline,
+                            color: AppColors.buttonColor
+                          )
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              
+              ),
+            ),
           ),
         ),
       ),
@@ -154,8 +159,6 @@ final formKeySignUp = GlobalKey<FormState>();
       
     } on FirebaseAuthException catch (e) {
       navigatorKey.currentState!.popUntil((route) => route.isFirst);
-      //print(e);
-
       // ignore: use_build_context_synchronously
       Utils().errorDialog(context, e.message);
 

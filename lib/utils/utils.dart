@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:reminder/theme.dart';
 
 class Utils {
 
@@ -26,5 +27,24 @@ class Utils {
         );
       }
     );
+  }
+
+  void messageDialog(context, String str) {
+    showDialog(
+        context: context, 
+        builder: (context) {
+          Future.delayed(const Duration(seconds: 5), () {
+          Navigator.of(context).pop(true);
+          });
+          return AlertDialog(
+            backgroundColor: AppColors.buttonColor,
+            contentTextStyle: const TextStyle(
+              fontSize: 16.0,
+              color: Colors.black
+            ),
+            content: Text(str),
+          );
+        }
+      );
   }
 }

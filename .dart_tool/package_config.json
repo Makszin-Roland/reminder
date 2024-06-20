@@ -3,13 +3,13 @@
   "packages": [
     {
       "name": "_flutterfire_internals",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/_flutterfire_internals-1.3.34",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/_flutterfire_internals-1.3.37",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
     {
       "name": "archive",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/archive-3.6.0",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/archive-3.6.1",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -38,6 +38,18 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "checked_yaml",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/checked_yaml-2.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "cli_util",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/cli_util-0.4.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "clock",
       "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/clock-1.1.1",
       "packageUri": "lib/",
@@ -45,19 +57,19 @@
     },
     {
       "name": "cloud_firestore",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/cloud_firestore-4.17.4",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/cloud_firestore-5.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "cloud_firestore_platform_interface",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/cloud_firestore_platform_interface-6.2.4",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/cloud_firestore_platform_interface-6.2.7",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "cloud_firestore_web",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/cloud_firestore_web-3.12.4",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/cloud_firestore_web-4.0.1",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
@@ -117,7 +129,7 @@
     },
     {
       "name": "file_picker",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/file_picker-8.0.3",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/file_picker-8.0.5",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
@@ -147,55 +159,73 @@
     },
     {
       "name": "firebase_auth",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/firebase_auth-4.19.6",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/firebase_auth-5.1.0",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "3.2"
     },
     {
       "name": "firebase_auth_platform_interface",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/firebase_auth_platform_interface-7.2.7",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/firebase_auth_platform_interface-7.4.0",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "3.2"
     },
     {
       "name": "firebase_auth_web",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/firebase_auth_web-5.11.6",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/firebase_auth_web-5.12.2",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
     {
       "name": "firebase_core",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/firebase_core-2.31.1",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/firebase_core-3.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "firebase_core_platform_interface",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/firebase_core_platform_interface-5.0.0",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/firebase_core_platform_interface-5.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "firebase_core_web",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/firebase_core_web-2.17.0",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/firebase_core_web-2.17.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "firebase_messaging",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/firebase_messaging-15.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "firebase_messaging_platform_interface",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/firebase_messaging_platform_interface-4.5.39",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "firebase_messaging_web",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/firebase_messaging_web-3.8.9",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
     {
       "name": "firebase_storage",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/firebase_storage-11.7.6",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/firebase_storage-12.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "firebase_storage_platform_interface",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/firebase_storage_platform_interface-5.1.21",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/firebase_storage_platform_interface-5.1.24",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "firebase_storage_web",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/firebase_storage_web-3.9.6",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/firebase_storage_web-3.9.9",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
@@ -209,7 +239,7 @@
       "name": "flutter",
       "rootUri": "file:///Users/rolandmakszin/Flutter%20SDK/flutter/packages/flutter",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "3.3"
     },
     {
       "name": "flutter_cache_manager",
@@ -218,8 +248,14 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "flutter_launcher_icons",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/flutter_launcher_icons-0.13.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "flutter_lints",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/flutter_lints-3.0.2",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/flutter_lints-4.0.0",
       "packageUri": "lib/",
       "languageVersion": "3.1"
     },
@@ -249,15 +285,15 @@
     },
     {
       "name": "flutter_plugin_android_lifecycle",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/flutter_plugin_android_lifecycle-2.0.19",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/flutter_plugin_android_lifecycle-2.0.20",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "3.4"
     },
     {
       "name": "flutter_test",
       "rootUri": "file:///Users/rolandmakszin/Flutter%20SDK/flutter/packages/flutter_test",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "3.3"
     },
     {
       "name": "flutter_web_plugins",
@@ -285,21 +321,21 @@
     },
     {
       "name": "image",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/image-3.3.0",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/image-4.2.0",
       "packageUri": "lib/",
       "languageVersion": "2.15"
     },
     {
       "name": "image_picker",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/image_picker-1.1.1",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/image_picker-1.1.2",
       "packageUri": "lib/",
       "languageVersion": "3.3"
     },
     {
       "name": "image_picker_android",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/image_picker_android-0.8.12+1",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/image_picker_android-0.8.12+3",
       "packageUri": "lib/",
-      "languageVersion": "3.3"
+      "languageVersion": "3.4"
     },
     {
       "name": "image_picker_for_web",
@@ -309,7 +345,7 @@
     },
     {
       "name": "image_picker_ios",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/image_picker_ios-0.8.11+2",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/image_picker_ios-0.8.12",
       "packageUri": "lib/",
       "languageVersion": "3.3"
     },
@@ -344,28 +380,34 @@
       "languageVersion": "3.0"
     },
     {
-      "name": "leak_tracker",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/leak_tracker-10.0.0",
+      "name": "json_annotation",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/json_annotation-4.9.0",
       "packageUri": "lib/",
-      "languageVersion": "3.1"
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "leak_tracker",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/leak_tracker-10.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
     },
     {
       "name": "leak_tracker_flutter_testing",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/leak_tracker_flutter_testing-2.0.1",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/leak_tracker_flutter_testing-3.0.3",
       "packageUri": "lib/",
-      "languageVersion": "3.1"
+      "languageVersion": "3.2"
     },
     {
       "name": "leak_tracker_testing",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/leak_tracker_testing-2.0.1",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/leak_tracker_testing-3.0.1",
       "packageUri": "lib/",
-      "languageVersion": "3.1"
+      "languageVersion": "3.2"
     },
     {
       "name": "lints",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/lints-3.0.0",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/lints-4.0.0",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.1"
     },
     {
       "name": "matcher",
@@ -381,7 +423,7 @@
     },
     {
       "name": "meta",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/meta-1.11.0",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/meta-1.12.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -417,9 +459,9 @@
     },
     {
       "name": "path_provider_android",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/path_provider_android-2.2.4",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/path_provider_android-2.2.6",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "3.4"
     },
     {
       "name": "path_provider_foundation",
@@ -459,9 +501,9 @@
     },
     {
       "name": "platform",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/platform-3.1.4",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/platform-3.1.5",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.2"
     },
     {
       "name": "plugin_platform_interface",
@@ -543,7 +585,7 @@
     },
     {
       "name": "test_api",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/test_api-0.6.1",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/test_api-0.7.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -573,9 +615,9 @@
     },
     {
       "name": "vm_service",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/vm_service-13.0.0",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/vm_service-14.2.1",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.3"
     },
     {
       "name": "web",
@@ -585,9 +627,9 @@
     },
     {
       "name": "win32",
-      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/win32-5.5.0",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/win32-5.5.1",
       "packageUri": "lib/",
-      "languageVersion": "3.3"
+      "languageVersion": "3.4"
     },
     {
       "name": "workmanager",
@@ -608,13 +650,22 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "yaml",
+      "rootUri": "file:///Users/rolandmakszin/.pub-cache/hosted/pub.dev/yaml-3.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "reminder",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.3"
     }
   ],
-  "generated": "2024-05-23T13:56:45.727880Z",
+  "generated": "2024-06-19T13:14:08.242838Z",
   "generator": "pub",
-  "generatorVersion": "3.3.3"
+  "generatorVersion": "3.4.1",
+  "flutterRoot": "file:///Users/rolandmakszin/Flutter%20SDK/flutter",
+  "flutterVersion": "3.22.1",
+  "pubCache": "file:///Users/rolandmakszin/.pub-cache"
 }

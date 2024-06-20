@@ -90,9 +90,17 @@ class FireStoreService {
   }
   }
 
-  static Future<String> getFiles(String reminderID, String reminderFilename) {
-    getData();
-    return fileRef.child('/$reminderID/$reminderFilename').getDownloadURL();
+  static Future<String> getFiles(String reminderID, String reminderFilename) async {
+    try {
+      getData();
+      final url = await fileRef.child('/$reminderID/$reminderFilename').getDownloadURL();
+      return url;
+    } on Exception catch (e) {
+      throw FirebaseException(
+        plugin: 'FirebaseStorage',
+        message: 'No object exists at the desired reference. $e',
+      );
+    }
   }
 
 

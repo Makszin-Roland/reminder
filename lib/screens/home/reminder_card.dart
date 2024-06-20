@@ -1,11 +1,9 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_pdfview/flutter_pdfview.dart';
 import 'package:intl/intl.dart';
 import 'package:reminder/models/reminder.dart';
 import 'package:reminder/theme.dart';
-
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart' as p;
@@ -27,7 +25,7 @@ class ReminderCard extends StatelessWidget {
       elevation: 8.0,
       color: AppColors.buttonColor,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        padding: const EdgeInsets.only(left: 16, right: 10, top: 5, bottom: 5),
         child: Row(
           children: [
             Expanded(
@@ -99,6 +97,29 @@ class ReminderCard extends StatelessWidget {
                       ),
                     ),
                   ]),
+
+                  const SizedBox(
+                    height: 10,
+                  ),
+
+                  //id
+                  Row(crossAxisAlignment: CrossAxisAlignment.center, children: [
+                    const Icon(Icons.subtitles),
+                    const SizedBox(
+                      width: 5,
+                    ),
+                    Expanded(
+                      child: RichText(
+                        text: TextSpan(
+                          text: reminder.id,
+                          style: const TextStyle(
+                            color: Colors.black,
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ]),
                 ],
               ),
             ),
@@ -114,21 +135,25 @@ class ReminderCard extends StatelessWidget {
                     _showImageDialog(context, reminder.fileUrl!, reminder.filename!);
                   }
                 },
-                child: Image.network(
-                  cacheWidth: 100,
-                  cacheHeight: 100,
-                  reminder.fileUrl!,
-                  loadingBuilder:(context, child, loadingProgress) => loadingProgress == null 
-                    ? child
-                    : const Center(child: CircularProgressIndicator()),
-                  errorBuilder: (context, error, stackTrace) {
-                    return Center(
-                      child: Image.asset(
-                        'assets/img/pdf_black.png',
-                        width: 100,
-                      ),
-                    );
-                  },
+                child: ClipRRect( 
+                  borderRadius: const BorderRadius.all(Radius.circular(12.0)),                
+                  child: Image.network(                
+                    cacheWidth: 130,
+                    cacheHeight: 130,
+                    fit: BoxFit.contain,
+                    reminder.fileUrl!,
+                    loadingBuilder:(context, child, loadingProgress) => loadingProgress == null 
+                      ? child
+                      : const Center(child: CircularProgressIndicator()),
+                    errorBuilder: (context, error, stackTrace) {
+                      return Center(
+                        child: Image.asset(
+                          'assets/img/pdf_black.png',
+                          width: 130,
+                        ),
+                      );
+                    },
+                  ),
                 ),
               )
           ],
@@ -143,22 +168,12 @@ Future<bool> _isPdf(String url) async {
   return response.headers['content-type'] == 'application/pdf';
 }
 
-Future  _showImageDialog(BuildContext context, String imageUrl, String name) async {
-  showDialog(
-    context: context, 
-    builder: (BuildContext context) {
-      return Scaffold(
-        appBar: AppBar(
-          title: Text(name),
-        ),
-        body: PhotoView(
-          imageProvider: NetworkImage(imageUrl),
-          minScale: PhotoViewComputedScale.contained * 1,
-          maxScale: PhotoViewComputedScale.covered * 2,
-          initialScale: PhotoViewComputedScale.contained,
-        ),
-      );
-    }
+Future<void> _showImageDialog(BuildContext context, String imageUrl, String name) async {
+  Navigator.push(
+    context,
+    MaterialPageRoute(
+      builder: (context) => FullScreenImagePage(imageUrl: imageUrl, name: name),
+    ),
   );
 }
 
@@ -166,18 +181,11 @@ void _showPdfDialog(BuildContext context, String pdfUrl, String pdfName) async {
   File file = await _downloadFile(pdfUrl);
   String localPath = file.path;
 
-  showDialog(
-    context: context,
-    builder: (BuildContext context) {
-      return Scaffold(
-        appBar: AppBar(
-          title:  Text(pdfName),
-        ),
-        body: PDFView(
-          filePath: localPath,
-        ),
-      );
-    },
+  Navigator.push(
+    context,
+    MaterialPageRoute(
+      builder: (context) => FullScreenPdfPage(pdfPath: localPath, pdfName: pdfName),
+    ),
   );
 }
 
@@ -188,4 +196,58 @@ Future<File> _downloadFile(String url) async {
   final file = File(p.join(dir.path, p.basename(url)));
   await file.writeAsBytes(bytes);
   return file;
+}
+
+class FullScreenImagePage extends StatelessWidget {
+  final String imageUrl;
+  final String name;
+
+  const FullScreenImagePage({
+    super.key,
+    required this.imageUrl,
+    required this.name,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        //title: Text(name),
+      ),
+      body: Center(
+        child: PhotoView(
+          backgroundDecoration: BoxDecoration(
+            color: AppColors.primaryColor,
+          ),
+          imageProvider: NetworkImage(imageUrl),
+          minScale: PhotoViewComputedScale.contained * 1,
+          maxScale: PhotoViewComputedScale.covered * 2,
+          initialScale: PhotoViewComputedScale.contained,
+        ),
+      ),
+    );
+  }
+}
+
+class FullScreenPdfPage extends StatelessWidget {
+  final String pdfPath;
+  final String pdfName;
+
+  const FullScreenPdfPage({
+    super.key,
+    required this.pdfPath,
+    required this.pdfName,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(pdfName),
+      ),
+      body: PDFView(
+        filePath: pdfPath,
+      ),
+    );
+  }
 }
