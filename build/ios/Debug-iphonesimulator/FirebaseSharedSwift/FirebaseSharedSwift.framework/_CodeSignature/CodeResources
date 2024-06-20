@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		iXTIljPQi4HPsZrTjX1+ychN3ug=
+		SU5TKCNY1Yibdz5Pe6tv3wY5HaY=
 		</data>
 		<key>Modules/FirebaseSharedSwift.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		5HdTlAeSaGPrrQe7G45MIvHLo5E=
+		QSPntc3sGUWN/kueSwNaft3hZW0=
 		</data>
 		<key>Modules/FirebaseSharedSwift.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		JFhrAzZWUTGrAd/SsccWDixBuwI=
+		s9xotHENc1wYKuiN8Uo7TQyh4ZY=
 		</data>
 		<key>Modules/FirebaseSharedSwift.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/FirebaseSharedSwift.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		0ivTj4bEvqTkSVGAYH8vUFO+rKU=
+		QlpIpLDdPMozTk5P8sVsWdAE8IE=
 		</data>
 		<key>Modules/FirebaseSharedSwift.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/FirebaseSharedSwift.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		36r8jpoXlhCY+xcliE3XZDcpn8s=
+		CN5/SMZVVTxDR85+yhCMofAwEKo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -73,14 +73,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DQYnUvAkx7mUBOtJzXvY7mzGEIiWW5kHPqGBIOlC7MQ=
+			N6TKOrPS86pi32+hWSzjEJGXrNiOfsgS/1hQ+RDIHD8=
 			</data>
 		</dict>
 		<key>Modules/FirebaseSharedSwift.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5tpEgmduWHuKoWXNuWosNwAEv0h0Nl0QlHsEIqW3Gpc=
+			LHN2U1ArS/gKl2s6z1qPXalKuFnEsJ7/Lmj696xLUQ8=
 			</data>
 		</dict>
 		<key>Modules/FirebaseSharedSwift.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -101,7 +101,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yAI0EnfF9vdmyLpM8FxIc6Br0MhOj5eC0Ka608q0g9A=
+			RJP64Yy0VyXpKKY1IOah5Hf+DnzshLSrClZs+w0HSXs=
 			</data>
 		</dict>
 		<key>Modules/FirebaseSharedSwift.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -122,7 +122,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			amfMN3C7oXG9B6DuCp52f1+kfzewxzHFYOAon+iWcGY=
+			iUV05jhzw8OKRN2EIYYZ63xLn8fC/Wp1hRT2E3cyiLA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

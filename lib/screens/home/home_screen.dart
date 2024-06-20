@@ -46,7 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Column(
                 children: [
                   const Text('Your reminder'),
-                  SizedBox(height: 10,),
+                  const SizedBox(height: 10,),
                   Text(user.email!)
                 ],
               )
@@ -118,19 +118,6 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
-
-      // body: ElevatedButton(
-      //   onPressed: () async {
-      //     final result = await FilePicker.platform.pickFiles();    
-      //     if (result == null ) return;
-
-      //     //final file = result.files.first;
-      //     // print(file.path);
-      //     // print(file.name);
-      //     // print(file.bytes);
-      //   }, 
-      //   child: const Text('Choose a file'),), 
-        
     );
   }
 }

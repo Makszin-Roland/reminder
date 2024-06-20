@@ -1,11 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:provider/provider.dart';
 import 'package:reminder/main.dart';
-import 'package:reminder/screens/home/home_screen.dart';
-import 'package:reminder/services/firestore_service.dart';
-import 'package:reminder/services/reminder_store.dart';
 import 'package:reminder/shared/styled_text.dart';
 import 'package:reminder/theme.dart';
 import 'package:reminder/utils/utils.dart';
